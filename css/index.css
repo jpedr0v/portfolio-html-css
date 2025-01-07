@@ -1,10 +1,17 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
-    border-bottom: 10px solid #62C370;
+    align-items: center;
+    background-color: #121619;
+    border-bottom: 10px solid #09814a;
     padding: 10px 20px;
     }
+
+h1{
+    font-family: "Press Start 2P", sans-serif;
+    color: #09814a;
+    text-shadow: 2px 2px 0px #2d4739;
+}
 
 nav{
     text-align: right;
@@ -24,7 +31,7 @@ a{
 a::before{
     content: "";
     display: inline-block;
-    background-color: #62C370;
+    background-color: #09814a;
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -32,12 +39,17 @@ a::before{
 
 #button{
     display: inline-block;
-    background-color: #62C370;
-    box-shadow: 5px 5px 0px #509e5c;
+    background-color: #09814a;
+    box-shadow: 5px 5px 0px #2d4739;
     padding: 18px 20px;
     margin-right: 0;
+    transition: transform 100ms linear;
+}
+
+#button::before{
+    content: none;
 }
 
 #button:hover{
-    background-color: #509e5c;
+    transform: scale(1.05);
 }
