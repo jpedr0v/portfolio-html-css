@@ -1,4 +1,4 @@
-.button{
+.main-button{
     display: inline-block;
     background-color: #09814a;
     box-shadow: 5px 5px 0px #000;
@@ -10,10 +10,10 @@
     text-decoration: none;
 }
 
-.button::before{
+.main-button::before{
     content: none;
 }
 
-.button:hover{
+.main-button:hover{
     transform: scale(1.05);
 }
