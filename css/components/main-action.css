@@ -18,6 +18,10 @@
     margin-right: 10px;
 }
 
+.action:hover{
+    color: #09814a;
+}
+
 .main-action:hover{
     color: #09814a;
 }
