@@ -52,4 +52,5 @@
     display: flex;
     justify-content: space-between;
     transform: translateX();
+    transition: transform 0.5s ease-in-out;
 }

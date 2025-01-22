@@ -2,6 +2,7 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>João Pedro</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,16 @@
         <link rel="stylesheet" href="css/components/button-arrow.css">
         <link rel="stylesheet" href="css/components/node-card.css">
         <link rel="stylesheet" href="css/components/main-footer.css">
+        <link rel="stylesheet" href="css/components/main-form.css">
+        <link rel="stylesheet" href="css/components/main-label.css">
+        <link rel="stylesheet" href="css/components/main-input.css">
     </head>
     <body>
         <header id="header" class="main-header">
             <h1 class="logo">JP</h1>
             <nav>
                 <a class="main-action" href="#skills" lang="en">Skills</a>
-                <a class="main-action" href="#projetos">Projetos</a> 
+                <a class="main-action" href="#projetos">Projetos</a>  
                 <a class="main-action" href="#sobre">Sobre</a>
                 <a class="main-action" href="#contatos">Contatos</a>
                 <a class="main-button" href="" lang="en">Download CV</a>
@@ -129,6 +133,16 @@
             <p class="main-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit  leo vel ex sodales volutpat. Pellentesque et pretium metus. Vivamus a  elementum felis, eu mollis magna. Phasellus gravida dolor auctor feugiat dictum. Ut enim ex, suscipit sit amet vulputate et, tristique non  velit. Mauris consequat elit vel mauris tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin arcu  luctus est laoreet, quis rhoncus lectus sagittis. Nunc eu lectus  feugiat, ullamcorper ipsum sit amet, consequat mi.
             </p>
+            <form id="contatos" class="main-form">
+                <legend class="main-title -second">Contatos</legend>
+                <label class="main-label" for="name">Nome</label>
+                <input class="main-input" id="name" type="text" required>
+                <label class="main-label" for="email">Email</label>
+                <input class="main-input" id="email" type="email" required>
+                <label class="main-label" for="message">Mensagem</label>
+                <textarea class="main-input -textarea" id="message" required></textarea>
+                <button class="main-button -full" type="submit">Enviar</button>
+            </form>
             <section class="main-carousel">
                 <button class="button-arrow -left"><span class="content">Voltar</span></button>
                 <div class="items">
@@ -174,7 +188,7 @@
                 <button class="button-arrow -right"><span class="content">Avançar</span></button>
             </section>
         </section>
-        <footer id="contatos" class="main-footer">
+        <footer class="main-footer">
             <a class="action" href="https://linkedin.com/in/jpedrov" target="_blank">
                 <img src="/assets/img/icon-linkedin.png" alt="Logo do Linkedin pixelada">
             </a>
@@ -185,6 +199,6 @@
                 <img src="/assets/img/icon-discord.png" alt="Logo do Discord em pixelada">
             </a>
         </footer>
-        <script src="js/components/main-carousel.js"></script>
+        <script src="js/components/main-carousel.js" defer></script>
     </body>
 </html>
